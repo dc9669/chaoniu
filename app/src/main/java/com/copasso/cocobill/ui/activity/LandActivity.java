@@ -87,14 +87,14 @@ public class LandActivity extends BaseMVPActivity<LandContract.Presenter>
             case R.id.login_tv_sign:  //sign
                 if (isLogin) {
                     //置换注册界面
-                    signTV.setText("Login");
-                    loginBtn.setText("Sign Up");
+                    signTV.setText(R.string.login);
+                    loginBtn.setText(R.string.register);
                     rpasswordET.setVisibility(View.VISIBLE);
                     emailET.setVisibility(View.VISIBLE);
                 } else {
                     //置换登陆界面
-                    signTV.setText("Sign Up");
-                    loginBtn.setText("Login");
+                    signTV.setText(R.string.register);
+                    loginBtn.setText(R.string.login);
                     rpasswordET.setVisibility(View.GONE);
                     emailET.setVisibility(View.GONE);
                 }
@@ -135,8 +135,8 @@ public class LandActivity extends BaseMVPActivity<LandContract.Presenter>
             SnackbarUtils.show(mContext, "请填写必要信息");
             return;
         }
-        if (!StringUtils.checkEmail(email)) {
-            SnackbarUtils.show(mContext, "请输入正确的邮箱格式");
+        if (!StringUtils.checkPhoneNumber(email)) {
+            SnackbarUtils.show(mContext, "请输入正确的手机号码");
             return;
         }
         if (!password.equals(rpassword)) {

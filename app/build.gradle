@@ -23,41 +23,18 @@ android {
         targetCompatibility = '1.8'
     }
 }
-allprojects {
-    repositories {
-        google()
-        jcenter() {
-            url 'https://maven.aliyun.com/repository/jcenter'
-        }
-        maven {
-            url 'https://maven.aliyun.com/repository/google'
-        }
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
-        maven {
-            url "https://s3.amazonaws.com/moat-sdk-builds"
-        }
-    }
-}
+
 greendao {
     schemaVersion 1
     daoPackage 'com.copasso.cocobill.model.gen'
     targetGenDir 'src/main/java'
 }
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha01'
     implementation 'com.google.android.material:material:1.1.0-alpha02'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
-
-    implementation(name: 'open_ad_sdk', ext: 'aar')
 
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.8.0'

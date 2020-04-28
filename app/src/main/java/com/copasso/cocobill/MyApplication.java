@@ -25,7 +25,7 @@ public class MyApplication extends Application {
         application = this;
         context = getApplicationContext();
         //初始化Bmob后端云
-        Bmob.initialize(this, "941f4add6503358048b02b83fcb605f6");
+        Bmob.initialize(this, "4bba725603fb1d09062b9e3e75e28afb");
         currentUser = BmobUser.getCurrentUser(MyUser.class);
     }
 

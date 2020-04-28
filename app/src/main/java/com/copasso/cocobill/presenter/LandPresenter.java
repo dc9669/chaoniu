@@ -37,8 +37,8 @@ public class LandPresenter extends RxPresenter<LandContract.View> implements Lan
         MyUser myUser =new MyUser();
         myUser.setUsername(username);
         myUser.setPassword(password);
-        myUser.setEmail(mail);
-
+       // myUser.setEmail(mail);
+        myUser.setMobilePhoneNumber(mail);
         myUser.signUp(new SaveListener<MyUser>() {
             @Override
             public void done(MyUser myUser, BmobException e) {

@@ -43,7 +43,7 @@
             android:drawableLeft="@android:drawable/sym_action_email"
             android:drawablePadding="5dp"
             android:gravity="center_vertical"
-            android:hint="Email"
+            android:hint="请输入手机号码"
             android:singleLine="true"
             android:textSize="16sp"
             android:background="@drawable/selector_edittext_bg"/>
@@ -59,7 +59,7 @@
             android:drawableLeft="@android:drawable/sym_action_email"
             android:drawablePadding="5dp"
             android:gravity="center_vertical"
-            android:hint="Username"
+            android:hint="用户名"
             android:singleLine="true"
             android:textSize="16sp"
             android:background="@drawable/selector_edittext_bg"/>
@@ -76,7 +76,7 @@
             android:drawableLeft="@android:drawable/ic_lock_idle_lock"
             android:drawablePadding="5dp"
             android:gravity="center_vertical"
-            android:hint="Password"
+            android:hint="密码"
             android:singleLine="true"
             android:textSize="16sp"
             android:background="@drawable/selector_edittext_bg"/>
@@ -95,7 +95,7 @@
             android:drawableLeft="@android:drawable/ic_lock_idle_lock"
             android:drawablePadding="5dp"
             android:gravity="center_vertical"
-            android:hint="Repeat password"
+            android:hint="确认密码"
             android:singleLine="true"
             android:textSize="16sp"
             android:background="@drawable/selector_edittext_bg"/>
@@ -117,7 +117,7 @@
                 android:layout_marginLeft="20dp"
                 android:gravity="center"
                 android:layout_centerVertical="true"
-                android:text="Forgot password?"
+                android:text="忘记密码?"
                 android:textSize="14sp"
                 android:textColor="#999999"/>
 
@@ -130,7 +130,7 @@
                 android:gravity="center"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:text="Login"
+                android:text="登录"
                 style="@style/Button.Default"/>
 
             <TextView
@@ -141,7 +141,7 @@
                 android:layout_marginRight="8dp"
                 android:gravity="center"
                 android:layout_centerVertical="true"
-                android:text="Sign Up"
+                android:text="注册"
                 android:textSize="14sp"
                 android:textColor="#999999"/>
 
