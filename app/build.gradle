@@ -5,7 +5,7 @@ android {
     compileSdkVersion 28
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
-        applicationId "com.copasso.cocobill"
+        applicationId "com.copasso.chaoniu"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
